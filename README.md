@@ -32,3 +32,64 @@ For PubSub demo,
 6. Run node pubsubconnect.js file in src folder to receive Salesforce Pub/Sub events
 7.  Deploy SFDC Rest client https://github.com/ramanathansj/dynamodb-sfdc-client
 
+AWS Gateway Configuration - DyanmoDB Put Request 
+
+![image](https://github.com/ramanathansj/salesforce-async-request-reply-queues/assets/881993/aabbb69f-6934-4af8-b536-265af4f67051)
+
+![image](https://github.com/ramanathansj/salesforce-async-request-reply-queues/assets/881993/931f442c-cce2-4e47-aead-df32dbb29eac)
+
+<img width="808" alt="Screen Shot 2023-09-28 at 9 10 48 PM" src="https://github.com/ramanathansj/salesforce-async-request-reply-queues/assets/881993/c91eabcc-a265-4659-8bfe-159a43ffe0af">
+
+Mapping Template JSON
+
+{
+  "TableName": "ordersv1",
+  "Item": {
+    "externalId": {
+      "S": "$input.path('$.externalId')"
+    },
+    "name": {
+      "S": "$input.path('$.name')"
+    },
+    "id": {
+      "S": "$input.path('$.id')"
+    },
+    "status": {
+      "S": "Completed"
+    },
+    "orderdata": {
+      "S": "$input.path('$.orderdata')"
+    },
+    "requestId": {
+      "S": "$input.path('$.requestId')"
+    }
+  }
+}
+
+Deploy to stage environment like dev or qa
+
+<img width="1271" alt="Screen Shot 2023-09-28 at 9 13 03 PM" src="https://github.com/ramanathansj/salesforce-async-request-reply-queues/assets/881993/44dfad03-cc33-42ac-bbce-e947bc81f734">
+
+
+Setup your API security key and configure in Salesforce metadata for invoking API gateway call
+
+<img width="1280" alt="Screen Shot 2023-09-28 at 9 14 30 PM" src="https://github.com/ramanathansj/salesforce-async-request-reply-queues/assets/881993/5e141213-d586-49f7-b0ce-036c5b0ff9e6">
+
+Salesforce Metadata Setup for gateway, update each one of the below settings
+
+<img width="1071" alt="Screen Shot 2023-09-28 at 9 15 50 PM" src="https://github.com/ramanathansj/salesforce-async-request-reply-queues/assets/881993/fac73c06-9126-49ae-a157-d7da5736ead3">
+
+
+DynamoDB Table
+
+<img width="1308" alt="Screen Shot 2023-09-28 at 9 16 54 PM" src="https://github.com/ramanathansj/salesforce-async-request-reply-queues/assets/881993/d88d6dcf-3cd0-4da4-b815-964eaece9cb4">
+
+DyanmoDB Trigger
+
+<img width="1389" alt="Screen Shot 2023-09-28 at 9 17 43 PM" src="https://github.com/ramanathansj/salesforce-async-request-reply-queues/assets/881993/ab4887b3-e4e3-4d1d-ab90-c6208151c837">
+
+Make sure to deploy sfdc client repo to post event streams back to Salesforce order table
+
+
+
+
