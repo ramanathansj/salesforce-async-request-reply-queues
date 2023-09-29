@@ -7,7 +7,7 @@ Second generation unlocked package installation link - https://login.salesforce.
 
 or
 
-sf project deploy validate --source-dir force-app 
+sf project deploy start --source-dir force-app 
 
 Salesforce Order integration with AWS DynamoDB
 
