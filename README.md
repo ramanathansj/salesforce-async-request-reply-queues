@@ -3,7 +3,7 @@ Dreamforce 2023 demo of Async Request Reply Queue based pattern
 
 Installation:
 
-Second generation managed installation link - https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1Q000000wwiVQAQ
+Second generation unlocked package installation link - https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1Q000000wwiVQAQ
 
 or
 
