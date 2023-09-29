@@ -68,8 +68,7 @@ Mapping Template JSON
 
 Deploy to stage environment like dev or qa
 
-<img width="1271" alt="Screen Shot 2023-09-28 at 9 13 03 PM" src="https://github.com/ramanathansj/salesforce-async-request-reply-queues/assets/881993/44dfad03-cc33-42ac-bbce-e947bc81f734">
-
+<img width="1251" alt="image" src="https://github.com/ramanathansj/salesforce-async-request-reply-queues/assets/881993/44988c50-bbc3-41ea-a9e6-b928bd54e5b6">
 
 Setup your API security key and configure in Salesforce metadata for invoking API gateway call
 
@@ -86,9 +85,11 @@ DynamoDB Table
 
 DyanmoDB Trigger
 
-<img width="1389" alt="Screen Shot 2023-09-28 at 9 17 43 PM" src="https://github.com/ramanathansj/salesforce-async-request-reply-queues/assets/881993/ab4887b3-e4e3-4d1d-ab90-c6208151c837">
+<img width="1053" alt="Screen Shot 2023-09-28 at 9 22 55 PM" src="https://github.com/ramanathansj/salesforce-async-request-reply-queues/assets/881993/1f99e699-18be-41cd-ae1d-b5b52fcba44b">
 
-Make sure to deploy sfdc client repo to post event streams back to Salesforce order table
+Make sure to deploy sfdc client repo to post event streams back to Salesforce order table, https://github.com/ramanathansj/dynamodb-sfdc-client
+
+
 
 
 
