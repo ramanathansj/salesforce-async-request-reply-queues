@@ -28,5 +28,7 @@ For PubSub demo,
 1. Install this SFDC repo
 2. Deploy PubSub Repo https://github.com/ramanathansj/salesforce-pub-sub
 3. Enter Salesforce, AWS credentials in .env file in src folder
-4. Run node db.js file in src folder to create dynamodb table
-5. Run node pubsubconnect.js file in src folder to receive Salesforce Pub/Sub events
+5. Run node db.js file in src folder to create dynamodb table
+6. Run node pubsubconnect.js file in src folder to receive Salesforce Pub/Sub events
+7.  Deploy SFDC Rest client https://github.com/ramanathansj/dynamodb-sfdc-client
+
