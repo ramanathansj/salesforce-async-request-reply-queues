@@ -1,7 +1,5 @@
 ### Dreamforce 2023 : Fundamentals for Designing Event Driven Integrations
 
-### Async Request Reply Queue based pattern
-
 ### Installation:
 
 Second generation unlocked package installation link - https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1Q000000wwiVQAQ
@@ -10,7 +8,7 @@ or
 
 sf project deploy start --source-dir force-app 
 
-Salesforce Order integration with AWS DynamoDB
+### Salesforce Order integration with AWS DynamoDB
 
 ![image](https://github.com/ramanathansj/salesforce-async-request-reply-queues/assets/881993/38a09a2b-1df2-45a7-8379-73dc62bc34d9)
 
